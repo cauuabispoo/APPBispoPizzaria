@@ -3,7 +3,9 @@ import {StyleSheet, View, } from 'react-native';
 
 import Topo from './componentes/Topo';
 import Detalhes from './componentes/Detalhes';
-import Rodape from './componentes/Rodape';
+import Rodape from '../componente/Rodape';
+
+import styles from './estilos'
 
 export default function index({topo, detalhes}) {
     return (
@@ -16,16 +18,3 @@ export default function index({topo, detalhes}) {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    geral: {
-        flex: 1,
-        backgroundColor: '#A20F0F', 
-    },
-    corpo: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',   
-    },
-
-});

@@ -1,6 +1,14 @@
-import {View } from 'react-native';
+import {View} from 'react-native';
 
 import ProdutoItem from './src/telas/Produto/';
+import mock from './src/mocks/produto';
+
+import Sobre from './src/telas/Sobre/';
+import mock_sobre from './src/mocks/sobre';
+
+import Produtos from './src/telas/produtos/';
+import mock_produtos from './src/mocks/produtos';
+
 
 import {useFonts, LilitaOne_400Regular} from "@expo-google-fonts/lilita-one";
 
@@ -8,10 +16,17 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import mock from './src/mocks/produto';
 
-function MenuKit(){
+function MenuProduto(){
   return<ProdutoItem {...mock} />
+}
+
+function MenuSobre(){
+  return<Sobre {...mock_sobre} />
+}
+
+function MenuProdutos(){
+  return<Produtos {...mock_produtos} />
 }
 
 const tab = createBottomTabNavigator();
@@ -47,13 +62,13 @@ function TabMenu(){
     tabBarActiveTintColor: '#A20F0F',
     tabBarInactiveTintColor: 'grey',
     tabBarHideOnKeyboard: true,
-    headerShow: true,
+    headerShown: false,    
 
     })}>
-      <tab.Screen name="Produtos" component={MenuKit} />
-      <tab.Screen name="Carrinho" component={MenuKit} />
-      <tab.Screen name="Favoritos" component={MenuKit} />
-      <tab.Screen name="Sobre nós" component={MenuKit} />
+      <tab.Screen name="Produtos" component={MenuProdutos} />
+      <tab.Screen name="Carrinho" component={MenuProduto} />
+      <tab.Screen name="Favoritos" component={MenuProduto} />
+      <tab.Screen name="Sobre nós" component={MenuSobre} />
     </tab.Navigator>
 }
 
