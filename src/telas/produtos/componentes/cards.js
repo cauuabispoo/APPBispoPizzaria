@@ -3,7 +3,7 @@ import { View, ScrollView, TouchableOpacity } from 'react-native';
 import { Card } from 'react-native-paper';
 
 import css from "./cssProd"
-import Rodape from '../../componente/Rodape';
+import Rodape from '../../componentegeral/Rodape';
 
 export default function Detalhes() {
     return <>

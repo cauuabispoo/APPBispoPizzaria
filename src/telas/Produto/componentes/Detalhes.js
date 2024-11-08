@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         paddingRight: 10,
     },
     titulo: {
-        fontSize:30,
+        fontSize: 30,
         textAlign: 'center',
         color: 'white',
     },
@@ -46,8 +46,6 @@ const styles = StyleSheet.create({
         //color: 'green',
         textAlign: 'center',
         fontWeight: 'bold'
-    },
-    botao: {
     },
     tbotao: {
         color: 'white',

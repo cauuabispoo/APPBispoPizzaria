@@ -3,7 +3,7 @@ import {StyleSheet, View, } from 'react-native';
 
 import Topo from './componentes/Topo';
 import Detalhes from './componentes/Detalhes';
-import Rodape from '../componente/Rodape';
+import Rodape from '../componentegeral/Rodape';
 
 import styles from './estilos'
 

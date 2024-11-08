@@ -3,7 +3,7 @@ import {StyleSheet, View, StatusBar, Image} from 'react-native';
 
 import pizzaCala from '../../../../assets/calabresa.png';
 import Texto from '../../../componentes/Texto.js';
-import icone from '../../../../assets/icone.png';
+// import icone from '../../../../assets/icone.png';
 
 export default function Topo({titulo}) {
     return (
