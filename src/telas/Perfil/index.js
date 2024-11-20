@@ -7,6 +7,7 @@ import { StyleSheet, View, TouchableOpacity, TextInput, Text, PixelRatio, Button
 import { Camera, CameraType } from 'expo-camera/legacy';
 import Ionicos from 'react-native-vector-icons/Ionicons'
 
+
 import { Card } from 'react-native-paper';
 
 import Texto from '../../componentes/Texto.js';

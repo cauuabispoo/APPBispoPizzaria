@@ -10,6 +10,8 @@ import mock_sobre from './src/mocks/sobre';
 import Produtos from './src/telas/produtos/';
 import mock_produtos from './src/mocks/produtos';
 
+import Favoritos from './src/telas/favoritos/';
+
 import Perfil from './src/telas/Perfil/';
 import mock_perfil from './src/mocks/perfil';
 
@@ -94,8 +96,8 @@ function TabMenu(){
           : 'bag-outline';
         }else  if (route.name === "Favoritos"){
           iconName = focused
-          ? 'bookmark'
-          : 'bookmark-outline';
+          ? 'heart'
+          : 'heart-outline';
         }
         else if (route.name === "Sobre nós"){
           iconName = focused
@@ -118,8 +120,11 @@ function TabMenu(){
 
     })}>
       <tab.Screen name="Produtos" component={MenuProdutos} />
-      <tab.Screen name="Carrinho" component={MenuProduto} />
-      <tab.Screen name="Favoritos" component={MenuProduto} />
+      {/* <tab.Screen name="Carrinho" component={MenuProduto} /> */}
+      <tab.Screen
+        name="Favoritos"
+        component={Favoritos}
+      />
       <tab.Screen name="Sobre nós" component={MenuSobre} />
       <tab.Screen name="Perfil" component={camera} />
     </tab.Navigator>
